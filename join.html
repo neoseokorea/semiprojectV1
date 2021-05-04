@@ -5,7 +5,17 @@
         <meta charset="UTF-8">
         <title>세미 프로젝트 V1 - join</title>
         <link rel="stylesheet" href="/css/base.css">
+        <style>
+            #joinfrm { border: 1px solid red; width: 300px;
+                        margin: 100 auto;}
+            #joinfrm div {margin-bottom: 10px;}
+            #joinfrm label { display: inline-block; width: 120px;
+                            text-aglign: right; font-weight: bold}
+            input, button { padding: 5px}
+            input {width: 150px}
+        </style>
     </head>
+
     <body>
         <div id="wrap">
         <header>
@@ -30,37 +40,26 @@
 		<br>
 		<br>
         <form name="joinfrm" id="joinfrm" method="post">
-			<table width="400" border="0" cellspacing="0" cellpadding="10" align=center>
-          <tbody>
-            <tr>
-              <td with=200 align=right><label for="userid">아이디</label></td>
-              <td with=200><input type="text" name="userid" id="userid"></td>
-            </tr>
-            <tr>
-              <td align=right><label for="passwd">비밀번호</label></td>
-              <td><input type="password" name="passwd" id="passwd"></td>
-            </tr>
-            <tr>
-              <td align=right><label for="chkpwd">비밀번호 확인</label></td>
-              <td><input type="password" name="chkpwd" id="chkpwd"></td>
-            </tr>
-            <tr>
-              <td align=right><label for="name">이름</label></td>
-              <td><input type="text" name="name" id="name"></td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td><input type="submit" value="입력완료"> <input type="reset" value="다시입력"></td>
-            </tr>
-          </tbody>
-        </table>
-        </form>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+            <div><label for="userid">아이디</label>
+                <input type="text" name="userid" id="userid"></div>
+
+            <div><label for="passwd">비밀번호</label>
+                <input type="password" name="passwd" id="passwd"></div>
+
+            <div><label for="chkpwd">비밀번호 확인</label>
+                <input type="password" name="chkpwd" id="chkpwd"></div>
+
+            <div><label for="name">이름</label>
+                <input type="text" name="name" id="name"></div>
+
+            <div><label for="email">이메일</label>
+                <input type="text" name="email" id="email"></div>
+
+            <div><label></label>
+                <button type="button">입력 완료</button>
+                <button type="reset">다시 입력</button></div>
+
+            </form>
 		</div>
 
 
